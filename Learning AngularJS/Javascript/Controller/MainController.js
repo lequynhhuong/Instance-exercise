@@ -29,6 +29,8 @@ app.controller('MainController', [
       $scope.products[index].likes += 1;
     };
     $scope.minusOne = function(index) {
-      $scope.products[index].dislikes -= 1;
+      $scope.products[index].dislikes += 1;
+      // though it is a minusOne function, since in the index file, there is already a - mark there
+      //there is no need to make it minus here.
     };
   }]);

@@ -40,6 +40,7 @@ to $scope in MainController become available to use within  <div  class ="main">
                 in the controller. the plusOne() function then gets the index of the product that was clicked , adn then adds one
                 to product's Like property
                 -->
+                <p class="dislikes" ng-click="minusOne($index)">- {{product.dislikes}}</p>
             </div>
         </div>
 
