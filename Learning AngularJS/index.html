@@ -34,6 +34,9 @@ to $scope in MainController become available to use within  <div  class ="main">
             <p class="title">{{ product.name }}</p>
             <p class="price">{{ product.price | currency }}</p>
             <p class="date">{{ product.pubdate | date }}</p>
+            <div class="ratings">
+                <p class="likes" ng-click="plusOne($index)"> + {{product.likes}}</p>
+            </div>
         </div>
 
     </div>

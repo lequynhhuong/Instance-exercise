@@ -23,5 +23,7 @@ app.controller('MainController', [
             likes: 0,
           },
         ];
-
+    $scope.plusOne = function(index) {
+      $scope.products[index].likes += 1;
+    };
   }]);
