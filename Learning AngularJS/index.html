@@ -36,6 +36,10 @@ to $scope in MainController become available to use within  <div  class ="main">
             <p class="date">{{ product.pubdate | date }}</p>
             <div class="ratings">
                 <p class="likes" ng-click="plusOne($index)"> + {{product.likes}}</p>
+                <!-- ng-click is also a directive. when it is clicked, ng-click tells AngularJS to run the plusOne() function
+                in the controller. the plusOne() function then gets the index of the product that was clicked , adn then adds one
+                to product's Like property
+                -->
             </div>
         </div>
 
