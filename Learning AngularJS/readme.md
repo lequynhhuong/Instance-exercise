@@ -1,3 +1,4 @@
+
 **Workflow when making an AngularJS app**
 
 1/ Create a module and use `ng-app` in the view to define the application scope 
@@ -19,3 +20,11 @@ in the view
 - a `controller` manages the app's data
 - an `expression` displays values on the page 
 - a `filter` formats the value of an expression . 
+
+**Directive used in this exercise**
+
+- ng-app
+- ng-controller
+- ng-repeat
+- ng-scr
+- ng-click
