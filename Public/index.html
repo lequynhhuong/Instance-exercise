@@ -7,12 +7,28 @@
 
     <!-- Include the AngularJS library -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: 'AIzaSyDBhVfV2AKA7j5tsprOpjrHeTu8x4yCDdw',
+        authDomain: 'angularjs-exercise.firebaseapp.com',
+        databaseURL: 'https://angularjs-exercise.firebaseio.com',
+        projectId: 'angularjs-exercise',
+        storageBucket: '',
+        messagingSenderId: '861112408519',
+      };
+      firebase.initializeApp(config);
+    </script>
+
 </head>
 
 <!-- ng-app called is directive. it tells AngularJs that the myApp will live within the <body> element
 -->
 
 <body ng-app="myApp">
+
+
 <div class="header">
     <div class="container">
         <h1>Book End</h1>
